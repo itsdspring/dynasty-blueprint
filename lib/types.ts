@@ -78,15 +78,24 @@ export type LeagueTeam = {
   rosterId: number;
   teamName: string;
   managerName: string;
+
   playerCount: number;
+
   wins: number;
   losses: number;
   ties: number;
+
   players: TeamPlayer[];
   starters: TeamPlayer[];
   bench: TeamPlayer[];
+
+  draftPicks: DraftPick[];
+
   score: number;
   starterScore: number;
   depthScore: number;
-  draftPicks: DraftPick[];
+  teamValueScore: number;
+  youthScore: number;
+  contenderScore: number;
+  draftCapitalScore: number;
 };

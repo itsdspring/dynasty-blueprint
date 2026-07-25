@@ -50,6 +50,13 @@ export function buildDraftPickOwnership({
   }
 
   for (const tradedPick of tradedPicks) {
+    if (
+      Number(tradedPick.season) <
+      firstSeason
+    ) {
+      continue;
+    }
+
     const key =
       `${tradedPick.season}-` +
       `${tradedPick.round}-` +
